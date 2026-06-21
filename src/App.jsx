@@ -7,7 +7,7 @@ import Projects from './components/Projects'
 import Research from './components/Research'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
-import { Analytics } from '@vercel/analytics/next'
+import { Analytics } from '@vercel/analytics/react'
 
 function App() {
   return (
