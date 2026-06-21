@@ -19,19 +19,18 @@ export default function About() {
             About
           </p>
           <p className="text-muted leading-relaxed mb-4">
-            I'm Inês — a UX Cloud &amp; AI Developer at SAP with a Master's in
+            I'm Inês — a UX Cloud &amp; AI Developer at SAP with 5+ years of experience in web and AI development. Have a Master's in
             Computer Science, specialising
             in Artificial Intelligence and Human-Computer Interaction. 
           </p>
            <p className="text-muted leading-relaxed mb-4">
-            My work lives at the intersection of AI innovation and human-centred
+            My work lives at the intersection of AI innovation and human-centered
             design: I build enterprise AI applications and automations tailored to customers' needs. I believe the best technology is built <em>with</em> people, not just
             for them.
           </p>
           <p className="text-muted leading-relaxed mb-4">
             Lived across three countries — Malaysia, Denmark, and Portugal — I bring a
-            global perspective to the technology I build and the communities
-            I serve.
+            global perspective to the technology I build.
           </p>
         </motion.div>
 

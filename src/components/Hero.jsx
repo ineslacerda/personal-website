@@ -43,7 +43,7 @@ export default function Hero() {
             className="text-xl md:text-2xl text-ink/80 leading-snug mb-6"
           >
             Where{' '}
-            <span className="gradient-text font-semibold">human-centred design</span>
+            <span className="gradient-text font-semibold">human-centered design</span>
             {' '}meets the{' '}
             <span className="gradient-text font-semibold">frontier of AI.</span>
           </motion.p>
