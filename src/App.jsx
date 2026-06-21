@@ -22,8 +22,8 @@ function App() {
         <Research />
         <Skills />
         <Contact />
+        <Analytics />
       </main>
-      <Analytics />
     </div>
   )
 }
