@@ -27,7 +27,7 @@ const projects = [
     color: 'from-sky-500 to-teal-500',
   },
   {
-    company: 'INESC-ID · Master Thesis · Lisbon',
+    company: 'INESC-ID · Master Thesis · Portugal',
     title: 'Portuguese Text-to-Sign Language Translator',
     headline: '· 84% comprehension <br />· ACM IVA 2023',
     description:
@@ -114,6 +114,70 @@ export default function Projects() {
             </motion.div>
           ))}
         </div>
+        {/* Personal Projects sub-section */}
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="mt-16"
+        >
+          <p className="text-xs font-semibold text-muted uppercase tracking-wider mb-2">
+            Personal Experiments
+          </p>
+          <p className="text-muted text-sm mb-8 max-w-2xl">
+            Outside of customer work, I've built some personal projects.
+          </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              {
+                icon: '🏃‍♀️',
+                title: 'Strava Workout Coach',
+                description:
+                  'I\'ve started running last year, completed my first 10K race this year, and I\'m now training for my first half marathon next year. To help structure my training, I built an AI coaching agent that reads my Strava data via a custom MCP server and generates personalised weekly training plans.',
+                stack: ['Python', 'LangGraph', 'FastMCP', 'A2A Protocol', 'Strava API', 'SAPUI5'],
+                tag: 'Personal · Side project',
+              },
+              {
+                icon: '⚽',
+                title: 'SCORE with SAP — World Cup 2026 Predictor',
+                description:
+                  'FIFA World Cup 2026 score predictor powered by SAP RPT-1 (a pre-trained tabular prediction model) and real-time web search for team news — injuries, suspensions, squad form. Ask natural language questions about the tournament and get data-driven answers enriched with real-world context.',
+                stack: ['Python', 'LangGraph', 'SAP RPT-1', 'FastMCP', 'A2A Protocol', 'SAPUI5'],
+                tag: 'Personal · Side project',
+              },
+            ].map((p, i) => (
+              <motion.div
+                key={p.title}
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="bg-white rounded-2xl p-7 border border-gray-100 card-hover flex flex-col gap-4"
+              >
+                <div className="flex items-start justify-between gap-2">
+                  <span className="text-3xl">{p.icon}</span>
+                  <span className="text-xs bg-gray-100 text-muted px-2 py-1 rounded-full">
+                    {p.tag}
+                  </span>
+                </div>
+                <h3 className="font-semibold text-ink text-base">{p.title}</h3>
+                <p className="text-muted text-sm leading-relaxed flex-1">{p.description}</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {p.stack.map((t) => (
+                    <span
+                      key={t}
+                      className="text-xs bg-surface text-ink/70 px-2 py-0.5 rounded-full border border-gray-200"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   )

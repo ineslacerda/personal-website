@@ -7,7 +7,7 @@ const fadeUp = {
 
 const events = [
   {
-    tag: 'Virtual · Ongoing',
+    tag: 'Online',
     title: 'Agentic AI Zone — Virtual Sessions',
     meta: '8 sessions · 50+ participants each · 400+ total',
     description:
@@ -16,20 +16,20 @@ const events = [
     highlight: '400+ participants reached',
   },
   {
-    tag: 'Onsite · Romania · EMEA Roadmap',
+    tag: 'Onsite · Romania · EMEA/MEE Roadmap',
     title: 'Agentic AI Zone — Onsite Workshops',
-    meta: '2 full days · Timișoara (47) + Bucharest (41) = 88 participants · 29 agents built',
+    meta: '2 full days · 88 participants · 29 agents built',
     description:
-      'Designed and facilitated 2-day hands-on workshops in Timișoara and Bucharest. Participants built real AI agents. Part of an ongoing 8-country EMEA/MEE rollout.',
+      'Led and facilitated 2-day hands-on workshops in Romania. Participants built real AI agents. Part of an ongoing 8-country EMEA/MEE rollout.',
     stack: ['SAP AI Strategy', 'Claude Code', 'Skills', 'LangGraph', 'Joule', 'A2A Protocol', 'Python'],
     highlight: '88 participants | 29 agents built',
   },
   {
     tag: 'Online · 4 Weeks',
     title: 'UX CD Hackathon — Road to GenAI',
-    meta: '4-week program · ~2–4 hrs/week · 23 participants',
+    meta: '4-week program · ~3 hrs/week · 23 participants',
     description:
-      'Designed and ran a 4-week online GenAI development programme. Each week built on the last — from a first LLM call to autonomous multi-agent systems with RAG and tool calling. Each session combined theory, live code walkthroughs, and real customer use cases.',
+      'Designed and ran a 4-week online GenAI development programme - going from a first LLM call to autonomous multi-agent systems with RAG and tool calling. Each session combined theory, live code walkthroughs, and real customer use cases.',
     stack: ['Node.js', 'CAP', 'Fiori', 'AI Core', 'LangGraph', 'Agentic Patterns', 'RAG', 'MCP'],
     highlight: 'From zero to multi-agent in 4 weeks',
   },
@@ -104,10 +104,10 @@ export default function AILeadership() {
           className="mt-12 grid grid-cols-2 md:grid-cols-5 gap-6 bg-white rounded-2xl p-8 border border-gray-100"
         >
           {[
+            { value: '8', label: 'Virtual Sessions' },
             { value: '400+', label: 'Virtual Participants' },
             { value: '88', label: 'Onsite Participants' },
             { value: '29', label: 'Agents Built' },
-            { value: '8', label: 'Virtual Sessions' },
             { value: '23', label: 'Hackathon Participants' },
           ].map((s) => (
             <div key={s.label} className="text-center">

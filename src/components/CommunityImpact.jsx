@@ -14,14 +14,14 @@ const communities = [
       { value: '3+', label: 'Events / Quarter' },
     ],
     description:
-      'Co-lead the Pride@SAP Portugal chapter, organising quarterly events that create space for LGBTQ+ employees and allies at SAP. Focused on psychological safety, visibility, and building an inclusive culture.',
+      'Co-lead the Pride@SAP Portugal chapter, organizing quarterly events that create an inclusive space for LGBTQ+ employees and allies at SAP. Focused on psychological safety, visibility, and building an inclusive culture.',
   },
   {
     icon: '👩‍💻',
     title: 'SAP Women in Tech',
     stats: [],
     description:
-      'Selected for Top Women Tech Brussels, speaker at Breaking Into Tech (80 attendees), and volunteer mentor — see 2024 highlights below.',
+      'Selected for Top Women Tech Brussels, speaker at Breaking Into Tech (80 attendees), and volunteer mentor — see highlights below.',
   },
   {
     icon: '🤖',
@@ -63,6 +63,8 @@ export default function CommunityImpact() {
                 <span className="text-3xl">{c.icon}</span>
                 <h3 className="font-semibold text-ink text-base">{c.title}</h3>
               </div>
+
+               <p className="text-muted text-sm leading-relaxed">{c.description}</p>
               
               {c.stats.length > 0 && (
                 <div className="flex gap-6">
@@ -76,7 +78,6 @@ export default function CommunityImpact() {
                   ))}
                 </div>
               )}
-              <p className="text-muted text-sm leading-relaxed">{c.description}</p>
             </motion.div>
           ))}
         </div>
